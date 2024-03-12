@@ -102,3 +102,48 @@ button {
     margin-top: 10.5%;
 }
 
+@media (width <=800px) {
+    body {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img"
+        "img"
+        "text"
+        "text"
+        ;
+    }
+    .item_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item_2 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+    h1 {
+        padding: 10px;
+        width: 100%;
+        font-size: 2.5em;
+    }
+    button {
+        margin: 0;
+        width: 50%;
+    }
+    .img {
+        margin-top: 80%;
+        height:  300px auto;
+        width: 50%;
+        background-size: contain;
+
+    }
+    .bola {
+        width: 80%;
+        height: 50%;
+    }
+}
